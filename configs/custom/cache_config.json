@@ -1,0 +1,54 @@
+{
+  "num_levels": 0,
+  "caches": [
+    {
+      "type": "L1I",
+      "size": "16kB",
+      "assoc": 8,
+      "tag_latency": 1,
+      "data_latency": 1,
+      "response_latency": 1,
+      "mshrs": 16,
+      "tgts_per_mshr": 20,
+      "clusivity": "mostly_incl",
+      "writeback_clean": "True"
+    },
+    {
+      "type": "L1D",
+      "size": "64kB",
+      "assoc": 8,
+      "tag_latency": 1,
+      "data_latency": 1,
+      "response_latency": 1,
+      "mshrs": 16,
+      "tgts_per_mshr": 20,
+      "clusivity": "mostly_incl",
+      "writeback_clean": "True"
+    },
+    {
+      "type": "L2",
+      "size": "256kB",
+      "assoc": 16,
+      "tag_latency": 10,
+      "data_latency": 10,
+      "response_latency": 1,
+      "mshrs": 20,
+      "tgts_per_mshr": 12,
+      "clusivity": "mostly_excl",
+      "writeback_clean": "True"
+    },
+    {
+      "type": "L3",
+      "size": "4MB",
+      "assoc": 32,
+      "tag_latency": 40,
+      "data_latency": 40,
+      "response_latency": 10,
+      "mshrs": 256,
+      "tgts_per_mshr": 12,
+      "clusivity": "mostly_excl",
+      "writeback_clean": "False"
+    }
+  ]
+}
+
