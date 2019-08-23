@@ -1,5 +1,5 @@
 {
-  "num_levels": 0,
+  "num_levels": 3,
   "caches": [
     {
       "type": "L1I",
